@@ -16,4 +16,9 @@ class ApiUrl{
 
   //Profile
   static String user_edit = '$BaseUrl/api/user/update';
+
+  //Logout
+  static String logout = '$BaseUrl/api/logout';
+
+
 }

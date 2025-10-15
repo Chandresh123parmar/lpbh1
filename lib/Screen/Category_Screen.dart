@@ -62,7 +62,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                 final list = category[index];
                 return InkWell(
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (_) => CategoryBusinessListIndex()));
+                    //Navigator.push(context, MaterialPageRoute(builder: (_) => CategoryBusinessListIndex(cat_Id: list.id.toString() ??'0',)));
                   },
                   child: Card(
                     elevation: 2,
@@ -73,22 +73,22 @@ class _CategoryScreenState extends State<CategoryScreen> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        // 🟢 Circle Image
+                        // Circle Image
                         Container(
                           height: 70,
                           width: 70,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: Colors.grey.shade200,
+                            color: Colors.blue.shade50,
                             image: DecorationImage(
-                              image: NetworkImage(list.icon ?? ''),
-                              fit: BoxFit.cover,
-                              onError: (error, stackTrace) {},
+                              fit: BoxFit.fill,
+                              image: NetworkImage(list.icon ?? '',),
                             ),
                           ),
                         ),
                         const SizedBox(height: 10),
-                        // 🟢 Category Name
+
+                        // Category Name
                         Text(
                           list.name ?? 'No Name',
                           textAlign: TextAlign.center,

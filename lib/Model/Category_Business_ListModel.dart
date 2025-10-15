@@ -1,11 +1,11 @@
-class CategoryBusinessList {
+class CategoryBusinessListModel {
   bool? status;
   String? message;
   List<Data>? data;
 
-  CategoryBusinessList({this.status, this.message, this.data});
+  CategoryBusinessListModel({this.status, this.message, this.data});
 
-  CategoryBusinessList.fromJson(Map<String, dynamic> json) {
+  CategoryBusinessListModel.fromJson(Map<String, dynamic> json) {
     status = json['status'];
     message = json['message'];
     if (json['data'] != null) {
