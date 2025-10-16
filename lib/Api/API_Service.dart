@@ -20,5 +20,10 @@ class ApiUrl{
   //Logout
   static String logout = '$BaseUrl/api/logout';
 
+  //Forget Password
+  static String forget_password ='$BaseUrl/api/forget-password-request';
+  static String otp_verify = '$BaseUrl/api/verify-otp';
+  static String reset_password = '$BaseUrl/api/reset-password';
+
 
 }

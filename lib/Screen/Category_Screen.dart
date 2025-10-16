@@ -61,6 +61,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
               itemBuilder: (context, index) {
                 final list = category[index];
                 return InkWell(
+                  borderRadius: BorderRadius.circular(15),
                   onTap: (){
                     //Navigator.push(context, MaterialPageRoute(builder: (_) => CategoryBusinessListIndex(cat_Id: list.id.toString() ??'0',)));
                   },
